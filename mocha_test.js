@@ -29,7 +29,7 @@ describe("AuthMiddleware and App Routes", () => {
         expect(res.headers["set-cookie"]).to.exist; // Check if the cookie is set
         done(err);
       });
-  });
+  }); 
 
   it("should logout the user", (done) => {
     const agent = request.agent(app);
